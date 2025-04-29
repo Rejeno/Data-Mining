@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Diary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emotion Detection Diary</h1>
+            <p>Express yourself and understand your emotions</p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h2>Write your thoughts</h2>
+                <textarea id="user-input" placeholder="How are you feeling today?"></textarea>
+                <button id="analyze-btn">Analyze Emotions</button>
+                <div id="loading" class="loading-spinner" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Analyzing your emotions...</p>
+                </div>
+            </section>
+            
+            <section class="results-section">
+                <h2>Emotion Analysis</h2>
+                <div class="emotion-results">
+                    <div id="emotions-container">
+                        <h3>Detected Emotions:</h3>
+                        <div id="emotions-list">
+                            <!-- Emotions will appear here -->
+                            <p class="placeholder">Your emotions will appear here after analysis</p>
+                        </div>
+                    </div>
+                    <div id="response-container">
+                        <h3>Response:</h3>
+                        <div id="emotion-response">
+                            <!-- Response will appear here -->
+                            <p class="placeholder">A response based on your emotions will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Diary Emotion Detection App - Using SVM Model</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
