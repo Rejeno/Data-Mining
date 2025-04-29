@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotion Detection Diary</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Emotion Detection Diary</h1>
-            <p>Express yourself and understand your emotions</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="max-w-6xl mx-auto p-4">
+        <!-- Header Section -->
+        <header class="text-center mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h1 class="text-3xl text-gray-900 mb-2">Emotion Detection Diary</h1>
+            <p class="text-orange-500 text-lg">Express yourself and understand your emotions</p>
         </header>
-        
-        <main>
-            <section class="input-section">
-                <h2>Write your thoughts</h2>
-                <textarea id="user-input" placeholder="How are you feeling today?"></textarea>
-                <button id="analyze-btn">Analyze Emotions</button>
-                <div id="loading" class="loading-spinner" style="display: none;">
-                    <div class="spinner"></div>
-                    <p>Analyzing your emotions...</p>
+
+        <!-- Main Content Section -->
+        <main class="flex gap-6 mb-8">
+            <!-- Input Section -->
+            <section class="flex-1 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl text-green-500 mb-4">Write your thoughts</h2>
+                <textarea id="user-input" placeholder="How are you feeling today?" class="w-full h-48 p-4 border border-gray-300 rounded-lg mb-4 text-lg resize-none"></textarea>
+                <button id="analyze-btn" class="bg-green-500 text-white py-2 px-6 rounded-lg text-lg transition hover:bg-blue-400">
+                    Analyze Emotions
+                </button>
+                <div id="loading" class="hidden mt-6 flex flex-col items-center">
+                    <div class="w-9 h-9 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
+                    <p class="mt-2 text-lg text-gray-500">Analyzing your emotions...</p>
                 </div>
             </section>
-            
-            <section class="results-section">
-                <h2>Emotion Analysis</h2>
-                <div class="emotion-results">
+
+            <!-- Results Section -->
+            <section class="flex-1 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl text-orange-500 mb-4">Emotion Analysis</h2>
+                <div class="space-y-6">
                     <div id="emotions-container">
-                        <h3>Detected Emotions:</h3>
-                        <div id="emotions-list">
+                        <h3 class="text-xl text-gray-900 mb-2">Detected Emotions:</h3>
+                        <div id="emotions-list" class="flex flex-wrap gap-3">
                             <!-- Emotions will appear here -->
-                            <p class="placeholder">Your emotions will appear here after analysis</p>
+                            <p class="text-gray-400 italic">Your emotions will appear here after analysis</p>
                         </div>
                     </div>
                     <div id="response-container">
-                        <h3>Response:</h3>
-                        <div id="emotion-response">
+                        <h3 class="text-xl text-gray-900 mb-2">Response:</h3>
+                        <div id="emotion-response" class="text-gray-600">
                             <!-- Response will appear here -->
-                            <p class="placeholder">A response based on your emotions will appear here</p>
+                            <p class="text-gray-400 italic">A response based on your emotions will appear here</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        
-        <footer>
-            <p>Diary Emotion Detection App - Using SVM Model</p>
+
+        <!-- Footer Section -->
+        <footer class="text-center p-6 bg-white rounded-lg shadow-md text-gray-600">
+            <p class="text-sm">Diary Emotion Detection App - Using SVM Model</p>
         </footer>
     </div>
 
-    <!-- Link to external JavaScript file -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
