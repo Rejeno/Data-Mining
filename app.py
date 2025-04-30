@@ -112,6 +112,10 @@ def normalize_text(tokens):
 def index():
     return render_template('index.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/analyze', methods=['POST'])
 def analyze():
     text = request.json.get('text', '')
@@ -161,6 +165,6 @@ def analyze():
         import traceback
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
-
 if __name__ == '__main__':
     app.run(debug=True)
+
