@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "body";
+    src: url(../fonts/Biscuitos.otf);
+  }
+  
+  @font-face {
+    font-family: "title";
+    src: url(../fonts/JayaBaru.otf);
+  }
+  
+  
+  .font-title {
+    font-family: "title", sans-serif;
+  }
+  
+  .font-body {
+    font-family: "body", sans-serif;
+  }
