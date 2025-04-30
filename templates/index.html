@@ -5,57 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotion Detection Diary</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-[#F3F4E6] text-gray-800">
 
-    <div class="max-w-6xl mx-auto p-4">
-        <!-- Header Section -->
-        <header class="text-center mb-8 p-6 bg-white rounded-lg shadow-md">
-            <h1 class="text-3xl text-gray-900 mb-2">Emotion Detection Diary</h1>
-            <p class="text-orange-500 text-lg">Express yourself and understand your emotions</p>
-        </header>
+    <!-- Nav -->
+    <nav class="text-center p-6 flex items-center justify-between z-3">
+        <div>
+            <img src="../public/sentisize_logo 1.png" alt="logo" class="w-26 h-8 mx-auto mb-4">
+        </div>
+        <div class="flex justify-end flex-1 gap-20 font-body text-[#325F89] text-lg mr-[12rem]">
+            <a href="#" class="transition hover:text-[#4EC3B9]">Home</a>
+            <a href="#" class="text-[#FD5017] transition hover:text-[#4EC3B9]">Sentiment</a>
+            <a href="#" class="transition hover:text-[#4EC3B9]">About Us</a>
+            <a href="#" class="transition hover:text-[#4EC3B9]">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto p-4 h-[120vh]">
+        <div> <img src="../public/blue-br-1.png" alt="wihh" class="absolute top-0 left-0 w-[20rem] h-[15rem] object-full z-[-1]"</div>
+        <div> <img src="../public/pink-br-1.png" alt="wah" class=" absolute top-0 left-0 w-[40rem] h-[30rem] object-full z-[-2]"></div>
+        <div> <img src="../public/green-br-1.png" alt="wah" class=" absolute top-190 right-40 w-[50rem] h-[15rem] object-full z-[-3]"></div>
+        <div> <img src="../public/yellow-br-1.png" alt="wah" class="absolute top-90 right-0 w-[40rem] h-[40rem] object-full z-[-4]"></div>
 
         <!-- Main Content Section -->
-        <main class="flex gap-6 mb-8">
+        <main class="flex gap-2 mb-8 col-2 bg-[#F3F4E6]/60 p-5 rounded-[4rem] backdrop-blur-lg shadow-lg h-[45rem] z-3"> 
             <!-- Input Section -->
-            <section class="flex-1 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl text-green-500 mb-4">Write your thoughts</h2>
-                <textarea id="user-input" placeholder="How are you feeling today?" class="w-full h-48 p-4 border border-gray-300 rounded-lg mb-4 text-lg resize-none"></textarea>
-                <button id="analyze-btn" class="bg-green-500 text-white py-2 px-6 rounded-lg text-lg transition hover:bg-blue-400">
-                    Analyze Emotions
+            <section class="flex flex-col p-6 rounded-lg w-full">
+                <h2 class="self-center text-2xl text-[#325F89] mb-4 font-title">input your sentiments</h2>
+                <textarea 
+                    id="user-input" 
+                    placeholder="Drop in your vibe, whether it's joy, rage, curiosity, or chaos—and let us decode the mood." 
+                    class="w-full h-48 p-4 border border-gray-300 rounded-lg mb-4 text-lg text-[#4A6D94]/80 resize-none font-body h-full"></textarea>
+                
+                <button 
+                    id="analyze-btn" 
+                    class="self-end font-title bg-[#325F89] text-[#F3F4E6] py-2 px-6 rounded-tl-[0.5rem] rounded-tr-[1.75rem] rounded-bl-[1.75rem] rounded-br-[0.5rem] text-[1rem] transition hover:bg-[#22415E]">
+                    SENTIMIZE
                 </button>
+                
                 <div id="loading" class="hidden mt-6 flex flex-col items-center">
                     <div class="w-9 h-9 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
                     <p class="mt-2 text-lg text-gray-500">Analyzing your emotions...</p>
                 </div>
             </section>
 
+            <!-- Center Line Section -->
+            <section class="w-[0.4rem] bg-[#22415E]"></section>
             <!-- Results Section -->
-            <section class="flex-1 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl text-orange-500 mb-4">Emotion Analysis</h2>
+            <section class="flex flex-col p-6 rounded-lg w-full">
+                <h2 class="self-center text-[#325F89] mb-4 text-2xl font-title">Emotion Analysis</h2>
                 <div class="space-y-6">
                     <div id="emotions-container">
-                        <h3 class="text-xl text-gray-900 mb-2">Detected Emotions:</h3>
+                        <h3 class="text-xl text-[#325F89] my-2 font-body">You are feeling</h3>
                         <div id="emotions-list" class="flex flex-wrap gap-3">
                             <!-- Emotions will appear here -->
-                            <p class="text-gray-400 italic">Your emotions will appear here after analysis</p>
+                            <p class="text-[#325F89]/60 italic">Your emotions will appear here after analysis</p>
                         </div>
                     </div>
                     <div id="response-container">
-                        <h3 class="text-xl text-gray-900 mb-2">Response:</h3>
+                        <h3 class="text-xl text-[#325F89] mb-2 font-body">Reading Between the Lines:</h3>
                         <div id="emotion-response" class="text-gray-600">
                             <!-- Response will appear here -->
-                            <p class="text-gray-400 italic">A response based on your emotions will appear here</p>
+                            <p class="text-[#325F89]/60  italic">A response based on your emotions will appear here</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
         <!-- Footer Section -->
-        <footer class="text-center p-6 bg-white rounded-lg shadow-md text-gray-600">
-            <p class="text-sm">Diary Emotion Detection App - Using SVM Model</p>
-        </footer>
     </div>
 
     <script src="/static/script.js"></script>
