@@ -109,6 +109,10 @@ def normalize_text(tokens):
     return ' '.join(normalized) if normalized else 'none'
 
 @app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/index')
 def index():
     return render_template('index.html')
 
