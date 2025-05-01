@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Diary</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body class="bg-[#F3F4E6] text-gray-800">
+    <!-- BG Geometric Shapes-->
+      <div> <img src="../static/public/h-purple-1.png" alt="wihh" class="absolute top-0 left-60 w-[27rem] h-[10rem] object-full z-[-1]"</div>
+      <div> <img src="../static/public/h-orange-1.png" alt="wah" class=" absolute top-0 left-0 w-[27rem] h-[25rem] object-full z-[-2]"></div>
+      <div> <img src="../static/public/h-red-1.png" alt="wah" class=" absolute top-80 right-0 w-[15rem] h-[23rem] object-full z-[-3]"></div>
+      <div> <img src="../static/public/h-green1.png" alt="wah" class=" absolute top-110 right-0 w-[38rem] h-[55rem] object-full z-[-4]"></div>
+      <div> <img src="../static/public/h-bigC-blue-1.png" alt="wah" class=" absolute top-340 right-0 w-[40rem] h-[70rem] object-full z-[-4]"></div>
+      <div> <img src="../static/public/h-bluegreen-1.png" alt="wah" class=" absolute top-600 left-0 w-[12rem] h-[25rem] object-full z-[-4]"></div>
+      <div> <img src="../static/public/h-skygreen-1.png" alt="wah" class=" absolute top-700 right-0 w-[20rem] h-[40rem] object-full z-[-4]"></div>
+
+    <!-- Nav -->
+    <nav class="text-center p-6 flex items-center justify-between z-3">
+        <div>
+            <img src="../static/public/sentisize_logo 1.png" alt="logo" class="w-26 h-6 mx-auto mb-4">
+        </div>
+        <div class="flex justify-end flex-1 gap-20 font-body text-[#325F89] text-lg mr-[12rem]">
+            <a href="../templates/home.html" class="text-[#FD5017] transition hover:text-[#4EC3B9]">Home</a>
+            <a href="../templates/index.html" class="transition hover:text-[#4EC3B9]">Sentiment</a>
+            <a href="../templates/about.html" class="transition hover:text-[#4EC3B9]">About Us</a>
+            <a href="../templates/contact.html" class="transition hover:text-[#4EC3B9]">Contact Us</a>
+        </div>
+    </nav>
+
+    <div id="landing" class="flex items-center flex-col gap-8 mt-20 w-full h-[120vh]">
+        <section class="text-center flex flex-col items-center justify-center max-w-5xl px-4">
+          
+          <h1 class="mt-10 text-[4rem] text-[#325F89] mb-4 font-title bg-gradient-to-r from-[#22415E] to-[#4788C4] bg-clip-text text-transparent leading-tight">
+            "Feel, share, and <br> grow with smart <br> insights."
+          </h1>
+      
+          <p class="font-body text-[1.5rem] text-[#22415E] pt-5 text-center px-6 md:px-32">
+            "Share your feelings, let our system analyze them, and receive thoughtful suggestions to improve your emotional well-being."
+          </p>
+      
+          <a href="../templates/index.html" class="font-body flex items-center justify-center gap-2 py-1 bg-[#22415E] text-white rounded-full hover:bg-[#4788C4] transition mt-4 w-[11rem] text-[1.3rem]">
+            Try Now!
+            <img src="../static/public/arrow-small-down.png" alt="Arrow" class="w-8 h-8">
+          </a>
+          <div> <img src="../static/public/h-line-1.png" alt="Line" class="w-full ml-[5.5rem] mt-10" </div>
+        </section>
+      </div>
+      
+    <div id="emotions" class="ml-[10%] w-[50%]">
+      <div class="font-body text-[#22415E] text-[2.5rem]">
+        <span class="font-title text-[4rem] text-[#4EC3B9]">Emotions</span> are the language of the soul; understanding them is the key to self-growth.
+      </div>
+      <div class="font-body text-[#22415E] text-[1.5rem] mt-6 mb-26 bg-gradient-to-r from-[#22415E] to-[#4788C4] bg-clip-text text-transparent leading-tigh opacity-90">
+        Writing about your emotions through journaling or letters can improve mental clarity, reduce stress, and enhance emotional well-being by helping you process thoughts and cope with challenges.
+      </div>
+    </div>
+
+
+    <div id="features" class="justify-center items-center shadow-lg w-[80%] h-full ml-[10%] z-3 bg-[#F3F4E6]/85 p-5 rounded-[1rem] backdrop-blur-xs">
+        <div class="font-body text-[#22415E] text-[2.5rem] mb-10">
+
+          <!-- emotional analysis here -->
+          <div id="emotionaAnalysis" class="grid grid-cols-2 gap-10 mt-30">
+            <div class="flex justify-center items-center text-center">
+              <img src="../static/public/h-emotional-analysis-1.png" alt="Analysis" class="w-80 h-60 mx-auto mb-40">     
+            </div>
+            <div>
+              <span>
+                <h2 class="font-title text-[2.5rem] bg-gradient-to-r from-[#4EC3B9] to-[#255D58] bg-clip-text text-transparent leading-tight">Emotional Analysis</h2>
+                <p class="font-body text-[#22415E] text-[1.5rem] mt-6 mb-40 bg-gradient-to-r from-[#22415E] to-[#4788C4] bg-clip-text text-transparent leading-tight mr-16 text-justify">
+                  The system uses advanced algorithms to analyze written entries, detecting emotional patterns and shifts for accurate mood assessment. Studies show 72% of people find journaling helps process emotions and improve clarity.
+              </span>
+            </div>
+          </div>
+          
+
+          <!-- personalized recommendation here -->
+          <div id="personalizedReco" class="grid grid-cols-2 gap-10 mt-20">
+            <div class="flex justify-center items-center text-center">
+              <img src="../static/public/h-suggestions-1.png" alt="suggestions" class="w-70 h-80 mx-auto mb-40">     
+            </div>
+            <div>
+              <span>
+                <h2 class="font-title text-[2.5rem] bg-gradient-to-r from-[#4EC3B9] to-[#255D58] bg-clip-text text-transparent leading-tight">Personalized Suggestions</h2>
+                <p class="font-body text-[#22415E] text-[1.5rem] mt-6 mb-40 bg-gradient-to-r from-[#22415E] to-[#4788C4] bg-clip-text text-transparent leading-tight mr-16 text-justify">
+                  Based on detected emotions, the system offers personalized advice—such as coping strategies, mindfulness, or lifestyle tips—to boost emotional well-being. Research shows 80% of users feel more positive after receiving such tailored recommendations.
+              </span>
+            </div>
+          </div>
+
+
+
+          <!-- emotional encouragement-->
+           <div id="emotionalEncouragement" class="grid grid-cols-2 gap-10 mt-10">
+              <div class="flex items-center text-center"> 
+                <img src="../static//public/h-emotionalencouragement-1.png" alt="emotionalEncouragement" class="w-80 h-80 mx-auto mb-40">
+              </div>
+              <div>
+                  <span>
+                      <h2 class="font-title text-[2.5rem] bg-gradient-to-r from-[#4EC3B9] to-[#255D58] bg-clip-text text-transparent leading-tight">Encourages Emotioanal Expression</h2>
+                      <p class="font-body text-[#22415E] text-[1.5rem] mt-6 mb-14 bg-gradient-to-r from-[#22415E] to-[#4788C4] bg-clip-text text-transparent leading-tight mr-16 text-justify">
+                        The system provides a safe, supportive space for users to freely express emotions, enhancing emotional health and self-awareness. An APA study found that 60% of those who regularly express emotions through writing or conversation feel less anxious and more resilient.
+                  </span>
+              </div>
+           </div>
+        </div>
+      </div>
+    <div id="credibility"></div>
+    <div id="quote"></div>
+</body>
+<footer>
+    <div> Hi </div>
+</footer>
