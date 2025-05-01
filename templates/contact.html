@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Diary</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body class="bg-[#F3F4E6] text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Nav -->
+    <nav class="text-center p-[1.5rem] flex items-center justify-between z-3">
+        <div>
+            <img src="../static/public/sentisize_logo 1.png" alt="logo" class="w-[6.5rem] h-[2rem] mx-auto mb-[1rem]">
+        </div>
+        <div class="flex justify-end flex-1 gap-[5rem] font-body text-[#325F89] text-[1.125rem] mr-[12rem]">
+            <a href="#" class="transition hover:text-[#4EC3B9]">Home</a>
+            <a href="/" class="transition hover:text-[#4EC3B9]">Sentiment</a>
+            <a href="#" class="transition hover:text-[#4EC3B9]">About Us</a>
+            <a href="#" class="text-[#FD5017] transition hover:text-[#4EC3B9]">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="max-w-8xl mx-auto p-[1rem] flex-1">
+        <div> <img src="../static/topleftViolet.png" alt="wihh" class="absolute top-0 left-0 w-[20rem] h-[15rem] object-full z-[-1]"></div>
+        <div>
+            <img 
+                src="../static/Rectangle 19.png" 
+                alt="wah" 
+                class="absolute bottom-0 right-0 max-w-full">
+        </div>
+        
+        <div>
+            <img 
+                src="../static/bottomViollet.png" 
+                alt="wah" 
+                class="absolute bottom-0 left-0">
+        </div>
+        
+
+        <!-- Main Content Section -->
+        <main class="flex gap-[0.5rem] mb-[2rem] col-2 bg-[#F3F4E6]/60 p-[1.25rem] rounded-[4rem] backdrop-blur-lg shadow-lg h-auto z-3"> 
+            <!-- Input Section -->
+            <section class="flex flex-col p-[1.5rem] rounded-lg w-full">
+                <h2 class="text-[2rem] text-[#325F89] mb-[1rem] font-title ml-[1.5rem]">REACH US OUT</h2>
+
+                <div class="flex justify-center gap-[3rem] mb-[1.5rem]">
+                    <!-- First Name -->
+                    <div class="relative w-[22.375rem]">
+                        <!-- Label -->
+                        <label for="first-name" class="absolute top-[1rem] text-[#325F89] font-title font-title text-[1.25rem]">FIRST NAME</label>
+                    
+                        <!-- Box -->
+                        <input 
+                        id="first-name" 
+                        type="text" 
+                        placeholder="Enter your first name" 
+                        class="w-[23rem] h-[3.4375rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[3rem] custom-letter-spacing">    
+                    
+                    </div>
+                
+                    <!-- Last Name -->
+                    <div class="relative w-[22.375rem]">
+                        <!-- Label -->
+                        <label for="last-name" class="absolute top-[1rem] text-[#325F89] font-title font-title text-[1.25rem]">LAST NAME</label>
+                    
+                        <!-- Box -->
+                        <input 
+                            id="last-name" 
+                            type="text" 
+                            placeholder="Enter your last name" 
+                            class="w-[27.4rem] h-[3.4375rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[3rem] custom-letter-spacing">
+                    </div>
+                </div>
+                
+                <!-- Email Address -->
+                <div class="relative mb-[1.5rem]">
+                    <!-- Label -->
+                    <label for="email" class="absolute top-[1.25rem] left-[5rem] text-[#325F89] font-title font-medium text-[1.25rem]">EMAIL ADDRESS</label>
+                    
+                    <!-- Box -->
+                    <input 
+                        id="email" 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        class="w-[52.625rem] h-[3.4375rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[3.5rem] ml-[5rem] custom-letter-spacing">
+                </div>
+                
+                <!-- Message -->
+                <div class="relative mb-[1.5rem]">
+                    <!-- Label -->
+                    <label for="MESSAGE" class="absolute top-0 left-[5rem] text-[#325F89] font-title font-medium text-[1.25rem]">MESSAGE</label>
+                    
+                    <!-- Box -->
+                    <textarea 
+                        id="MESSAGE" 
+                        placeholder="Type your message here..." 
+                        class="w-[52.625rem] h-[9.6875rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[2rem] ml-[5rem] custom-letter-spacing"></textarea>
+                </div>
+                 <!-- Submit Button -->
+                <div class="flex justify-end mt-[2rem] ">
+                    <button 
+                    type="submit" 
+                    class="bg-[#325F89] text-[#F3F4E6] text-[1.8125rem] font-body w-[10.5rem] h-[2.75rem] rounded-tl-[5.625rem] rounded-tr-[1.25rem] rounded-br-[5.625rem] rounded-bl-[1.875rem] cursor-pointer transition hover:bg-[#4EC3B9]">
+                    Submit
+                </button>
+                              
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

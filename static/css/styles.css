@@ -16,3 +16,7 @@
   .font-body {
     font-family: "body", sans-serif;
   }
+
+  .custom-letter-spacing {
+    letter-spacing: 0.2rem;
+}
