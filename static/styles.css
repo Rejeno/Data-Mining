@@ -1,18 +1,50 @@
 @font-face {
-    font-family: "body";
-    src: url(../fonts/Biscuitos.otf);
+  font-family: "body";
+  src: url(../fonts/Biscuitos.otf);
+}
+
+@font-face {
+  font-family: "title";
+  src: url(../fonts/JayaBaru.otf);
+}
+
+.font-title {
+  font-family: "title", sans-serif;
+}
+
+.font-body {
+  font-family: "body", sans-serif;
+}
+
+/* Fade-in and move effect */
+@keyframes fadeUp {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/* Add keyframes for fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  @font-face {
-    font-family: "title";
-    src: url(../fonts/JayaBaru.otf);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  
-  .font-title {
-    font-family: "title", sans-serif;
-  }
-  
-  .font-body {
-    font-family: "body", sans-serif;
-  }
+}
+
+/* Add the animation class */
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.fade-up {
+  opacity: 0; /* Initially hide elements */
+}

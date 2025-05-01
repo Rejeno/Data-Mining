@@ -56,3 +56,29 @@ function displayResults(emotions, response) {
     // Display response
     responseContainer.innerHTML = `<p>${response}</p>`;
 }
+
+// Scroll-triggered animation (Intersection Observer)
+const animatedElements = document.querySelectorAll('.animate-on-scroll'); // Make sure elements have this class
+
+// Set up the intersection observer options
+const options = {
+  root: null, // Use the viewport as the root
+  rootMargin: '0px',
+  threshold: 0.1 // 10% of the element must be visible
+};
+
+// Set up the intersection observer callback
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    console.log(entry.target);  // Add this line to check if the observer is firing
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-up'); // Add fade-up animation class when element is in view
+      observer.unobserve(entry.target); // Stop observing after the animation is triggered
+    }
+  });
+}, options);
+
+// Observe each element
+animatedElements.forEach(element => {
+  observer.observe(element);
+});
