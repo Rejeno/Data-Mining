@@ -108,13 +108,21 @@ def normalize_text(tokens):
     print(f"Normalized Text: {normalized}")  # Debugging print
     return ' '.join(normalized) if normalized else 'none'
 
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
