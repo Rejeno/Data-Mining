@@ -22,7 +22,7 @@
         </div>
     </nav>
 
-    <div class="max-w-8xl mx-auto p-[1rem] flex-1">
+    <div class="max-w-10xl mx-auto p-[4rem] flex-1">
         <div> <img src="../static/public/topleftViolet.png" alt="wihh" class="absolute top-0 left-0 w-[20rem] h-[15rem] object-full z-[-1]"></div>
         <div>
             <img 
@@ -40,85 +40,81 @@
         
 
         <!-- Main Content Section -->
-        <form class="flex gap-[0.5rem] mb-[1rem] col-2 bg-[#F3F4E6]/60 p-[1.25rem] rounded-[4rem] backdrop-blur-lg shadow-lg h-auto z-3"> 
+        <form class="flex gap-2 mb-4 col-2 bg-[#F3F4E6]/60 p-5 rounded-[4rem] backdrop-blur-lg shadow-lg h-auto z-3"> 
             <!-- Input Section -->
-            <section class="flex flex-col p-[1.5rem] rounded-lg w-full">
-                <h2 class="text-[1.5rem] text-[#325F89] mb-[1rem] font-title ml-[1.5rem]">REACH US OUT</h2>
-
-                <div class="flex justify-center gap-[3rem] mb-[1.5rem]">
+            <section class="flex flex-col p-6 rounded-lg w-full">
+                <h2 class="text-[1.5rem] text-[#325F89] mb-4 font-title ml-6">REACH US OUT</h2>
+        
+                <div class="flex justify-center gap-12 mb-6">
                     <!-- First Name -->
-                    <div class="relative w-[22.375rem]">
-                        <!-- Label -->
-                        <label for="first-name" class="absolute top-[1rem] text-[#325F89] font-title font-title text-[1rem]">FIRST NAME</label>
-                    
-                        <!-- Box -->
+                    <div class="flex flex-col w-[22.375rem]">
+                        <label for="first-name" class="text-[#325F89] font-title text-[1rem] mb-2">
+                            FIRST NAME
+                        </label>
                         <input 
-                        id="first-name" 
-                        name="first_name"
-                        type="text" 
-                        placeholder="Enter your first name" 
-                        class="w-[23rem] h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[3rem] custom-letter-spacing">    
-                    
+                            id="first-name" 
+                            name="first_name"
+                            type="text" 
+                            placeholder="Enter your first name" 
+                            class="w-full h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-3 text-[#325F89] text-[0.875rem] font-body custom-letter-spacing">
                     </div>
-                
+        
                     <!-- Last Name -->
-                    <div class="relative w-[22.375rem]">
-                        <!-- Label -->
-                        <label for="last-name" class="absolute top-[1rem] text-[#325F89] font-title font-title text-[1rem]">LAST NAME</label>
-                    
-                        <!-- Box -->
+                    <div class="flex flex-col w-[22.375rem]">
+                        <label for="last-name" class="text-[#325F89] font-title text-[1rem] mb-2">
+                            LAST NAME
+                        </label>
                         <input 
                             id="last-name" 
                             name="last_name"
                             type="text" 
                             placeholder="Enter your last name" 
-                            class="w-[27.4rem] h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[3rem] custom-letter-spacing">
+                            class="w-full h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-3 text-[#325F89] text-[0.875rem] font-body custom-letter-spacing">
                     </div>
                 </div>
-                
+        
                 <!-- Email Address -->
-                <div class="relative mb-[1.5rem]">
-                    <!-- Label -->
-                    <label for="email" class="absolute top-[.25rem] left-[5rem] text-[#325F89] font-title font-medium text-[1rem]">EMAIL ADDRESS</label>
-                    
-                    <!-- Box -->
+                <div class="flex flex-col mb-6">
+                    <label for="email" class="text-[#325F89] font-title text-[1rem] mb-2">
+                        EMAIL ADDRESS
+                    </label>
                     <input 
                         id="email" 
                         name="email"
                         type="email" 
                         placeholder="Enter your email address" 
-                        class="w-[52.625rem] h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[2rem] ml-[5rem] custom-letter-spacing">
+                        class="w-full h-[2.5rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-3 text-[#325F89] text-[0.875rem] font-body custom-letter-spacing">
                 </div>
-                
+        
                 <!-- Message -->
-                <div class="relative mb-[1.5rem]">
-                    <!-- Label -->
-                    <label for="MESSAGE" class="absolute top-0 left-[5rem] text-[#325F89] font-title font-medium text-[1rem]">MESSAGE</label>
-                    
-                    <!-- Box -->
+                <div class="flex flex-col mb-6">
+                    <label for="message" class="text-[#325F89] font-title text-[1rem] mb-2">
+                        MESSAGE
+                    </label>
                     <textarea 
-                        id="MESSAGE" 
+                        id="message" 
                         name="message"
                         placeholder="Type your message here..." 
-                        class="w-[52.625rem] h-[7rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-[0.75rem] text-[#325F89] text-[0.875rem] font-body mt-[2rem] ml-[5rem] custom-letter-spacing"></textarea>
+                        class="w-full h-[7rem] bg-[#F3F4E6] border-2 border-[#5D055F] rounded-lg p-3 text-[#325F89] text-[0.875rem] font-body custom-letter-spacing"></textarea>
                 </div>
-                 <!-- Submit Button -->
-                <div class="flex justify-end ">
+        
+                <!-- Submit Button -->
+                <div class="flex justify-end">
                     <button 
-                    type="submit" 
-                    class="bg-[#325F89] text-[#F3F4E6] text-[1.25rem] font-body w-[8rem] h-[2.5rem] rounded-tl-[5.625rem] rounded-tr-[1.25rem] rounded-br-[5.625rem] rounded-bl-[1.875rem] cursor-pointer transition hover:bg-[#4EC3B9]">
-                    Submit
-                </button>
-                              
+                        type="submit" 
+                        class="bg-[#325F89] text-[#F3F4E6] text-[1.25rem] font-body w-[8rem] h-[2.5rem] rounded-tl-[5.625rem] rounded-tr-[1.25rem] rounded-br-[5.625rem] rounded-bl-[1.875rem] cursor-pointer transition hover:bg-[#4EC3B9]">
+                        Submit
+                    </button>
                 </div>
             </section>
         </form>
+        
 
     </div>
 
     <script src="/static/script.js"></script>
 </body>
-<footer class="w-full h-[484px] bg-[#F3F4E6] shadow-[0_10px_20px_0_rgba(0,0,0,0.2)] mt-[15rem] relative">
+<footer class="w-full h-[484px] bg-[#F3F4E6] shadow-[0_10px_20px_0_rgba(0,0,0,0.2)] relative">
     <!-- Logo -->
     <img src="../static/public/sentisize_logo 2 BLUE FOR FOOTER.png" alt="Logo" class="absolute ml-[16rem] mt-[5rem] w-[125px]">
     
